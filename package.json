@@ -10,6 +10,7 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "dotenv": "8.2.0",
     "esm": "3.2.25",
     "winston": "3.2.1"
   },

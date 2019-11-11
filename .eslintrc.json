@@ -8,6 +8,7 @@
   },
   "rules": {
     "no-console": "error",
+    "no-process-env": "error",
     "prettier/prettier": [
       "error",
       {
