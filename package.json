@@ -1,0 +1,12 @@
+{
+  "name": "playground-jest-koa-mongodb",
+  "version": "1.0.0",
+  "description": "A playground for Jest with Koa and MongoDB.",
+  "author": "Roberto Achar <robertoachar@gmail.com>",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
