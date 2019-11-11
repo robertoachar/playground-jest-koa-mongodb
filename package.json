@@ -10,7 +10,8 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "esm": "3.2.25"
+    "esm": "3.2.25",
+    "winston": "3.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.7.2",
