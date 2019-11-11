@@ -1,6 +1,12 @@
-import { connect, disconnect } from './database';
+import app from './app';
+import config from './config';
+import logger from './logger';
+import { connect } from './database';
 
 (async () => {
   await connect();
-  await disconnect();
+
+  app.listen(config.PORT, () => {
+    logger.info('Server is running...');
+  });
 })();
