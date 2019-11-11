@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "8.2.0",
     "esm": "3.2.25",
+    "mongoose": "5.7.9",
     "winston": "3.2.1"
   },
   "devDependencies": {
