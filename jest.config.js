@@ -1,7 +1,9 @@
 module.exports = {
   projects: [
     {
-      displayName: 'test'
+      displayName: 'test',
+      testEnvironment: 'node',
+      preset: '@shelf/jest-mongodb'
     },
     {
       runner: 'jest-runner-eslint',
