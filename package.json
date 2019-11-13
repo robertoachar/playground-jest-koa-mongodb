@@ -4,6 +4,11 @@
   "description": "A playground for Jest with Koa and MongoDB.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "scripts": {
+    "lint": "jest --config jest-eslint.config.js",
+    "lint:watch": "jest --config jest-eslint.config.js --watch",
+    "jest": "jest --config jest-test.config.js",
+    "jest:coverage": "jest --config jest-test.config.js --coverage",
+    "jest:watch": "jest --config jest-test.config.js --watch",
     "start": "nodemon main.js",
     "test": "jest",
     "test:watch": "jest --watch",

@@ -1,15 +1,6 @@
+const lint = require('./jest-eslint.config');
+const test = require('./jest-test.config');
+
 module.exports = {
-  projects: [
-    {
-      displayName: 'test',
-      testEnvironment: 'node',
-      preset: '@shelf/jest-mongodb'
-    },
-    {
-      runner: 'jest-runner-eslint',
-      displayName: 'lint',
-      testMatch: ['<rootDir>/src/**/*.js']
-    }
-  ],
-  watchPlugins: ['jest-runner-eslint/watch-fix']
+  projects: [lint, test]
 };
