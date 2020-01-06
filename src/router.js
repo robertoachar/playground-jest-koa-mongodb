@@ -1,7 +1,7 @@
-import KoaRouter from 'koa-router';
+import Router from 'koa-router';
 import mongoose from 'mongoose';
 
-const router = KoaRouter();
+const router = Router();
 
 router.get('/', async ctx => {
   ctx.body = { message: 'Hello Playground' };

@@ -1,12 +1,16 @@
 import mongoose from 'mongoose';
+import { MongoMemoryServer } from 'mongodb-memory-server';
 
-import config from './config';
-import logger from './logger';
+import logger from '../src/logger';
+
+let mongoServer = null;
 
 const connect = async () => {
   mongoose.Promise = global.Promise;
 
-  await mongoose.connect(config.DATABASE, {
+  mongoServer = new MongoMemoryServer();
+  const mongoUri = await mongoServer.getUri();
+  await mongoose.connect(mongoUri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
@@ -15,6 +19,7 @@ const connect = async () => {
 
 const disconnect = async () => {
   await mongoose.disconnect();
+  await mongoServer.stop();
 };
 
 mongoose.connection
